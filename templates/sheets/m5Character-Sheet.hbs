@@ -1,0 +1,77 @@
+<form class="actor-sheet {{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64" />
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
+    </header>
+    <div class="sheet-content">
+        <table>
+            <tr>
+                <th>{{localize "midgard5.lp"}}</th>
+                <th>{{localize "midgard5.ap"}}</th>
+                <th>{{localize "midgard5.gw"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <th>{{localize "midgard5.aktuell"}}</th>
+                            <th>{{localize "midgard5.maximum"}}</th>
+                        </tr>
+                        <td>
+                            <input name="data.lp.value" type="text" value="{{data.lp.value}}" data-dtype="Number" />
+                        </td>
+                        <td>
+                            <input name="data.lp.max" type="text" value="{{data.lp.max}}" data-dtype="Number" />
+                        </td>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>{{localize "midgard5.aktuell"}}</th>
+                            <th>{{localize "midgard5.maximum"}}</th>
+                        </tr>
+                        <td>
+                            <input name="data.ap.value" type="text" value="{{data.ap.value}}" data-dtype="Number" />
+                        </td>
+                        <td>
+                            <input name="data.ap.max" type="text" value="{{data.ap.max}}" data-dtype="Number" />
+                        </td>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>{{localize "midgard5.attrvalue"}}</th>
+                            <th>{{localize "midgard5.bonus"}}</th>
+                        </tr>
+                        <td>
+                            <input name="data.gw.value" type="text" value="{{data.gw.value}}" data-dtype="Number" />
+                        </td>
+                        <td>
+                            <input name="data.gw.bonus" type="text" value="{{data.gw.bonus}}" data-dtype="Number" />
+                        </td>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+    </div>
+    {{!-- <section class="items">
+        <h3>Owned Items</h3>
+        <ol class="actor-items">
+            {{#each actor.items as |item id|}}
+            <li class="actor-item" data-item-id="{{id}}">
+                <div class="item-name">
+                    <img src="{{item.img}}" title="{{item.name}}" width="24" height="24" />
+                    <h4>{{item.name}}</h4>
+                </div>
+                <div class="item-controls">
+                    <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                    <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                </div>
+            </li>
+            {{/each}}
+        </ol>
+    </section> --}}
+</form>

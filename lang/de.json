@@ -1,0 +1,17 @@
+{
+  "ACTOR.TypeCharacter": "Spielfigur",
+  "ACTOR.TypeNpc": "Kreatur / Nichtspielerfigur",
+  "ACTOR.TypeVehicle": "Transportmittel / Pferd etc.",
+  "ITEM.TypeItem": "Gegenstand",
+  "midgard5.description": "Beschreibung",
+  "midgard5.item.value": "Wert",
+  "midgard5.quantity": "Menge",
+  "midgard5.ismagic": "Ist Magisch",
+  "midgard5.lp": "Lebenspunkte",
+  "midgard5.ap": "Ausdauerpunkte",
+  "midgard5.gw": "Gewandheit",
+  "midgard5.bonus": "Bonus",
+  "midgard5.aktuell": "Akt.",
+  "midgard5.maximum": "Max.",
+  "midgard5.attrvalue": "Wert"
+}

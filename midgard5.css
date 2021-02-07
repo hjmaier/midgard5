@@ -1,0 +1,24 @@
+.midgard5.sheet.item form {
+  display: flex;
+  flex-direction: column;
+}
+.midgard5.sheet.item .sheet-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.midgard5.sheet.item .sheet-content .editor {
+  height: 100%;
+}
+.midgard5.sheet.character form {
+  display: flex;
+  flex-direction: column;
+}
+.midgard5.sheet.character .sheet-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.midgard5.sheet.character .sheet-content .editor {
+  height: 100%;
+}

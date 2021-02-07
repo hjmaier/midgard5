@@ -1,0 +1,75 @@
+{
+   "Actor":{
+      "types":[
+        "npc",
+        "character"
+      ],
+      "templates":{
+        "characterDescription": {
+           "description": " "
+        },
+        "characterBars":{
+            "lp":{
+               "value":10,
+               "min":0,
+               "max":10
+            },
+            "ap":{
+               "value":5,
+               "min":0,
+               "max":5
+            }
+        },
+        "attributes":{
+          "gw": {
+            "value": 50,
+            "bonus": 0
+          }
+        }
+      },
+      "character":{
+         "templates": [
+           "characterBars",
+           "attributes",
+           "characterDescription"
+         ]
+      },
+      "npc":{
+         "templates": [
+           "characterBars",
+           "attributes",
+           "characterDescription"
+         ]
+      },
+      "vehicle":{
+         "templates": [
+           "characterBars",
+           "attributes"
+         ]
+      }
+   },
+   "Item":{
+      "types":[
+         "item"
+      ],
+      "templates":{
+         "itemDescription": {
+            "description": " "
+         }
+      },
+      "item":{
+         "templates":[
+            "itemDescription"
+         ],
+         "quantity":1,
+         "weight":0,
+         "magic":false,
+         "attributes":{
+
+         },
+         "groups":{
+
+         }
+      }
+   }
+}

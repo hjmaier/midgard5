@@ -1,0 +1,31 @@
+{
+    "name": "midgard5",
+    "title": "Midgard 5. Edition",
+    "description": "Midgard 5. Edition",
+    "version": 0.01,
+    "minimumCoreVersion": "0.7.9",
+    "compatibleCoreVersion": "0.7.9",
+    "templateVersion": 2,
+    "author": "Hans-Joachim Maier",
+    "esmodules": [
+      "midgard5.js"
+    ],
+    "styles": [
+      "midgard5.css"
+    ],
+    "packs": [],
+    "languages": [
+      {
+          "lang": "de",
+          "name": "Deutsch",
+          "path": "lang/de.json"
+        }
+      ],
+    "gridDistance": 1,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "lp",
+    "secondaryTokenAttribute": "ap",
+    "url": "https://github.com/GateKept/flatpacktemplate",
+    "manifest": "https://github.com/GateKept/flatpacktemplate/blob/master/system.json",
+    "initiative": "@gw.value + @gw.bonus"
+}
