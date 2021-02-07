@@ -25,7 +25,7 @@
     "gridUnits": "m",
     "primaryTokenAttribute": "lp",
     "secondaryTokenAttribute": "ap",
-    "url": "https://github.com/GateKept/flatpacktemplate",
-    "manifest": "https://github.com/GateKept/flatpacktemplate/blob/master/system.json",
+    "url": "https://github.com/hjmaier/midgard5",
+    "manifest": "https://github.com/hjmaier/midgard5/system.json",
     "initiative": "@gw.value + @gw.bonus"
 }
