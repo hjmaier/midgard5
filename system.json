@@ -27,5 +27,7 @@
     "secondaryTokenAttribute": "ap",
     "url": "https://github.com/hjmaier/midgard5",
     "manifest": "https://raw.githubusercontent.com/hjmaier/midgard5/main/system.json",
-    "initiative": "@gw.value + @gw.bonus"
+    "download": "https://github.com/hjmaier/midgard5/archive/V0.01.zip",
+    "initiative": "@gw.value + @gw.bonus",
+    "license": "LICENSE.txt"
 }
