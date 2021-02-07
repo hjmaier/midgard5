@@ -26,6 +26,6 @@
     "primaryTokenAttribute": "lp",
     "secondaryTokenAttribute": "ap",
     "url": "https://github.com/hjmaier/midgard5",
-    "manifest": "https://github.com/hjmaier/midgard5/blob/main/system.json",
+    "manifest": "https://raw.githubusercontent.com/hjmaier/midgard5/main/system.json",
     "initiative": "@gw.value + @gw.bonus"
 }
