@@ -2,7 +2,7 @@
     "name": "midgard5",
     "title": "Midgard 5. Edition",
     "description": "The German RPG Midgard 5. Edition",
-    "version": 0.01,
+    "version": 0.02,
     "minimumCoreVersion": "0.7.9",
     "compatibleCoreVersion": "0.7.9",
     "templateVersion": 2,
@@ -27,7 +27,7 @@
     "secondaryTokenAttribute": "ap",
     "url": "https://github.com/hjmaier/midgard5",
     "manifest": "https://raw.githubusercontent.com/hjmaier/midgard5/main/system.json",
-    "download": "https://github.com/hjmaier/midgard5/archive/V0.01-U1.zip",
+    "download": "https://github.com/hjmaier/midgard5/archive/V0.02",
     "initiative": "@gw.value + @gw.bonus",
     "license": "LICENSE.txt"
 }
