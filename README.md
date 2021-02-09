@@ -20,4 +20,4 @@
 </ul>
 <p>&nbsp;</p>
 <h2>License</h2>
-<p>Midgard is the property of Verlag f&uuml;r Fantady- und SF-Spiele GbR (VFSF), Stelzenberg, Germany.</p>
+<p>Midgard is the intelectual property of Verlag f&uuml;r Fantasy- und SF-Spiele GbR (VFSF), Stelzenberg, Germany.</p>
