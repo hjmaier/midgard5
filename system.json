@@ -25,7 +25,13 @@
         "label": "Makros Kritische Ereignisse",
         "path": "./packs/makros-kritische-ereignisse.db",
         "entity": "Macro"
-      }
+      },
+      {
+        "name": "makros-standardwurfel",
+        "label": "Standardwürfel",
+        "path": "./packs/makros-standardwurfel.db",
+        "entity": "Macro"
+      } 
     ],
     "languages": [
       {
@@ -40,7 +46,7 @@
     "secondaryTokenAttribute": "ap",
     "url": "https://github.com/hjmaier/midgard5",
     "manifest": "https://raw.githubusercontent.com/hjmaier/midgard5/main/system.json",
-    "download": "https://github.com/hjmaier/midgard5/archive/V0.02.zip",
+    "download": "https://github.com/hjmaier/midgard5/archive/V0.03.zip",
     "initiative": "@gw.value + @gw.bonus",
     "license": "LICENSE.txt"
 }
