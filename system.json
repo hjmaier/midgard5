@@ -12,8 +12,21 @@
     ],
     "styles": [
       "midgard5.css"
+    ], 
+    "packs": [
+      {
+        "name": "tabellen-kritische-ereignisse",
+        "label": "Tabellen Kritische Ereignisse",
+        "path": "./packs/tabellen-kritische-ereignisse.db",
+        "entity": "RollTable"
+      },
+      {
+        "name": "makros-kritische-ereignisse",
+        "label": "Makros Kritische Ereignisse",
+        "path": "./packs/makros-kritische-ereignisse.db",
+        "entity": "Macro"
+      }
     ],
-    "packs": [],
     "languages": [
       {
           "lang": "de",
