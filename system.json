@@ -15,21 +15,27 @@
     ], 
     "packs": [
       {
+        "name": "blaupause-spielfiguren",
+        "label": "Blaupausen für Spielfiguren",
+        "path": "./packs/actors/blaupause-spielfiguren.db",
+        "entity": "Actor"
+      },
+      {
         "name": "tabellen-kritische-ereignisse",
         "label": "Tabellen Kritische Ereignisse",
-        "path": "./packs/tabellen-kritische-ereignisse.db",
+        "path": "./packs/rolltables/tabellen-kritische-ereignisse.db",
         "entity": "RollTable"
       },
       {
         "name": "makros-kritische-ereignisse",
         "label": "Makros Kritische Ereignisse",
-        "path": "./packs/makros-kritische-ereignisse.db",
+        "path": "./packs/macros/makros-kritische-ereignisse.db",
         "entity": "Macro"
       },
       {
         "name": "makros-standardwurfel",
         "label": "Standardwürfel",
-        "path": "./packs/makros-standardwurfel.db",
+        "path": "./packs/macros/makros-standardwurfel.db",
         "entity": "Macro"
       } 
     ],

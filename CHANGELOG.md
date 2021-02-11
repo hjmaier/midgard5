@@ -3,4 +3,5 @@
 # 0.02
 - Kritische Tabellen
 # 0.03
-- Standardwürfel
+- Makros für Standardwürfel (W6. W20. W100)
+- Blaupausen für Spielerffiguren und Nichtspielerfiguren
