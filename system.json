@@ -2,7 +2,7 @@
     "name": "midgard5",
     "title": "Midgard 5. Edition",
     "description": "The German RPG Midgard 5. Edition",
-    "version": 0.02,
+    "version": 0.03,
     "minimumCoreVersion": "0.7.9",
     "compatibleCoreVersion": "0.7.9",
     "templateVersion": 2,
@@ -15,17 +15,29 @@
     ], 
     "packs": [
       {
+        "name": "blaupause-spielfiguren",
+        "label": "Blaupausen für Spielfiguren",
+        "path": "./packs/actors/blaupause-spielfiguren.db",
+        "entity": "Actor"
+      },
+      {
         "name": "tabellen-kritische-ereignisse",
         "label": "Tabellen Kritische Ereignisse",
-        "path": "./packs/tabellen-kritische-ereignisse.db",
+        "path": "./packs/rolltables/tabellen-kritische-ereignisse.db",
         "entity": "RollTable"
       },
       {
         "name": "makros-kritische-ereignisse",
         "label": "Makros Kritische Ereignisse",
-        "path": "./packs/makros-kritische-ereignisse.db",
+        "path": "./packs/macros/makros-kritische-ereignisse.db",
         "entity": "Macro"
-      }
+      },
+      {
+        "name": "makros-standardwurfel",
+        "label": "Standardwürfel",
+        "path": "./packs/macros/makros-standardwurfel.db",
+        "entity": "Macro"
+      } 
     ],
     "languages": [
       {
@@ -40,7 +52,7 @@
     "secondaryTokenAttribute": "ap",
     "url": "https://github.com/hjmaier/midgard5",
     "manifest": "https://raw.githubusercontent.com/hjmaier/midgard5/main/system.json",
-    "download": "https://github.com/hjmaier/midgard5/archive/V0.02.zip",
+    "download": "https://github.com/hjmaier/midgard5/archive/V0.03.zip",
     "initiative": "@gw.value + @gw.bonus",
     "license": "LICENSE.txt"
 }

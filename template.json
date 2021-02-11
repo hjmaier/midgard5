@@ -10,14 +10,14 @@
         },
         "characterBars":{
             "lp":{
-               "value":10,
+               "value":15,
                "min":0,
-               "max":10
+               "max":15
             },
             "ap":{
-               "value":5,
+               "value":20,
                "min":0,
-               "max":5
+               "max":20
             }
         },
         "attributes":{
