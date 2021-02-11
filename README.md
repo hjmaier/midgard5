@@ -9,7 +9,7 @@
 <p>&nbsp;</p>
 <h2>Features</h2>
 <p>&nbsp;</p>
-<p>Only a very basic system right now. Everything you need to run a combat (healthbar, endurance, initiative for the combat tracker).</p>
+<p>Only a very basic system right now. Everything you need to run a combat (healthbar, endurance, initiative for the combat tracker).<br/>I've added rollable tables, Macros for using them and Macros for standard dices (D6, D20, D100</p>
 <p>&nbsp;</p>
 <h2>ToDo:</h2>
 <p>&nbsp;</p>
