@@ -9,7 +9,7 @@
 <p>&nbsp;</p>
 <h2>Features</h2>
 <p>&nbsp;</p>
-<p>Only a very basic system right now. Everything you need to run a combat (healthbar, endurance, initiative for the combat tracker).<br/>I've added rollable tables, Macros for using them and Macros for standard dices (D6, D20, D100</p>
+<p>Only a very basic system right now. Everything you need to run a combat (healthbar, endurance, initiative for the combat tracker).<br/>I've added rollable tables, Macros for using them and Macros for standard dices (D6, D20,D10, D100</p>
 <p>&nbsp;</p>
 <h2>ToDo:</h2>
 <p>&nbsp;</p>
@@ -21,4 +21,19 @@
 </ul>
 <p>&nbsp;</p>
 <h2>License</h2>
+<br/>
+<h2>Midgard<h2>
 <p>Midgard is the intellectual property of Verlag f&uuml;r Fantasy- und SF-Spiele GbR (VFSF), Stelzenberg, Germany.</p>
+<br/>
+<h2>Icons</h2>
+<p>Icons were taken from <a href="https://game-icons.net/">Game-Icons.net</a> they are under the <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> license. The creators of the icons are not responsible for the use of their art.<p>
+<p>The following icons were taken:</p>
+<li><a href="https://game-icons.net/1x1/delapouite/dice-twenty-faces-twenty.html">Dice 20 faces 20 icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/perspective-dice-five.html">Perspective dice 5 icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/skoll/d10.html">Perspective dice 5 icon</a> by Skoll</li>
+<li><a href="https://game-icons.net/1x1/delapouite/broken-axe.html">Broken axe icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/lorc/chopped-skull.html">Chopped Skull icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
+<li><a href="https://game-icons.net/1x1/lorc/broken-shield.html">Broken shield icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/shield-bash.html">Shield bash icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/lorc/mushroom-cloud.html">Mushroom cloud icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
+<p>No changes were made</p>
