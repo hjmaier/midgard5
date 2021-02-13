@@ -21,7 +21,39 @@
             }
         },
         "attributes":{
+          "st": {
+            "value": 50,
+            "bonus": 0
+          },
+          "ge": {
+            "value": 50,
+            "bonus": 0
+          },
           "gw": {
+            "value": 50,
+            "bonus": 0
+          },
+          "ko": {
+            "value": 50,
+            "bonus": 0
+          },
+          "in": {
+            "value": 50,
+            "bonus": 0
+          },
+          "zt": {
+            "value": 50,
+            "bonus": 0
+          },
+          "au": {
+            "value": 50,
+            "bonus": 0
+          },
+          "pa": {
+            "value": 50,
+            "bonus": 0
+          },
+          "wk": {
             "value": 50,
             "bonus": 0
           }
