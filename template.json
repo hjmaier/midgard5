@@ -20,6 +20,13 @@
                "max":20
             }
         },
+        "characterHeader": { 
+          "es":0,
+          "ep":0,
+          "gg":0,
+          "sg":0,
+          "gp":2
+        },
         "attributes":{
           "st": {
             "value": 50,
@@ -63,7 +70,8 @@
          "templates": [
            "characterBars",
            "attributes",
-           "characterDescription"
+           "characterDescription",
+           "characterHeader"
          ]
       },
       "npc":{
@@ -94,8 +102,9 @@
             "itemDescription"
          ],
          "quantity":1,
-         "weight":0,
+         "value":0,
          "magic":false,
+         "onbody":false, 
          "attributes":{
 
          },
