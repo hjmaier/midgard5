@@ -6,6 +6,7 @@
   "midgard5.description": "Beschreibung",
   "midgard5.item-value": "Wert",
   "midgard5.item-quantity": "Menge",
+  "midgard5.item-onbody": "Am Körper",
   "midgard5.item-ismagic": "Ist Magisch",
   "midgard5.actor-lp": "Lebenspunkte",
   "midgard5.actor-ap": "Ausdauerpunkte",

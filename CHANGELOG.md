@@ -8,3 +8,6 @@
 # 0.04
 - Schönere Bilder für Macros der Krittabellen und Würfelmacros
 - Macros auf Crit Tabellen funktionieren jetzt korrekt
+# 0.05
+- Flag für Items: Am Körper getragen
+- Anpassungen, damit das Modul Tokenizer verwendet werden kann

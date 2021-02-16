@@ -22,3 +22,7 @@
 .midgard5.sheet.character .sheet-content .editor {
   height: 100%;
 }
+.midgard5.sheet.character .profile-img {
+  height: 64px;
+  width: 64px;
+}
