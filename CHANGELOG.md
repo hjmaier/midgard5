@@ -11,3 +11,5 @@
 # 0.05
 - Flag für Items: Am Körper getragen
 - Anpassungen, damit das Modul Tokenizer verwendet werden kann
+# 0.06
+- Fehler in Krit-Tabellen korrigiert

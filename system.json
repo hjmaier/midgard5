@@ -37,7 +37,13 @@
         "label": "Standardwürfel",
         "path": "./packs/macros/makros-standardwurfel.db",
         "entity": "Macro"
-      } 
+      },
+      {
+        "name": "scenes-midgard-karten",
+        "label": "Midgard-Karten",
+        "path": "./packs/scenes/scenes-midgard-karten.db", 
+        "entity": "Scene"
+      }  
     ],
     "languages": [
       {

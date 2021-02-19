@@ -18,6 +18,7 @@
 <li>Tables for critical rolls (already implemented in a rudimentary way)</li>
 <li>Modification of the standard combat tracker to fit the Midgard specific battle round rules</li>
 <li>Modification of the dice roller (detection of critical rolls and practice points)</li>
+<li>Midgard Maps</li>
 </ul>
 <p>&nbsp;</p>
 <h2>License</h2>

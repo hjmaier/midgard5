@@ -10,6 +10,10 @@
 .midgard5.sheet.item .sheet-content .editor {
   height: 100%;
 }
+.midgard5.sheet.item .item-img {
+  height: 64px;
+  width: 64px;
+}
 .midgard5.sheet.character form {
   display: flex;
   flex-direction: column;
