@@ -13,3 +13,4 @@
 - Anpassungen, damit das Modul Tokenizer verwendet werden kann
 # 0.06
 - Fehler in Krit-Tabellen korrigiert
+- Midgard-Karten hinzugefügt
