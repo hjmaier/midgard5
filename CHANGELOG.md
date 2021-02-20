@@ -14,3 +14,5 @@
 # 0.06
 - Fehler in Krit-Tabellen korrigiert
 - Midgard-Karten hinzugefügt
+# 0.07
+- Myrkgard-Karte hinzugefügt
