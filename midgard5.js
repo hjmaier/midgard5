@@ -12,6 +12,7 @@ Hooks.once("init", function () {
 // Default Sheet für Items definieren und das Standardsheet deaktivieren
 
   Items.unregisterSheet("core", ItemSheet);
+  Items.registerSheet("midgard5", m5ItemSheet, { makeDefault: true });
   Items.registerSheet("midgard5", m5ItemSheet, { types: ["item"], makeDefault: true });
   Items.registerSheet("midgard5", m5SkillSheet, { types: ["skill"], makeDefault: true });
 

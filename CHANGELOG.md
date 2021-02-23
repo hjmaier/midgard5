@@ -16,3 +16,4 @@
 - Midgard-Karten hinzugefügt
 # 0.07
 - Myrkgard-Karte hinzugefügt
+- Default icons für items
