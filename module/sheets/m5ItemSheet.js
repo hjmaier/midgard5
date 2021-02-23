@@ -1,5 +1,5 @@
 export default class m5ItemSheet extends ItemSheet {
-  
+
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       width: 530,
@@ -9,6 +9,14 @@ export default class m5ItemSheet extends ItemSheet {
   }
 
   get template() {
-      return `systems/midgard5/templates/sheets/m5${this.item.data.type}-Sheet.hbs`;
+    return `systems/midgard5/templates/sheets/m5Item-Sheet.hbs`;
+  }
+
+  getData() {
+    const data = super.getData();
+
+    data.config = CONFIG.midgard5;
+
+    return data;
   }
 }
