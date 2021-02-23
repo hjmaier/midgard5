@@ -1,116 +1,155 @@
 {
-   "Actor":{
-      "types":[
-        "npc",
-        "character"
-      ],
-      "templates":{
-        "characterDescription": {
-           "description": " "
+  "Actor": {
+    "types": [
+      "npc",
+      "character"
+    ],
+    "templates": {
+      "characterDescription": {
+        "description": " "
+      },
+      "characterBars": {
+        "lp": {
+          "value": 15,
+          "min": 0,
+          "max": 15
         },
-        "characterBars":{
-            "lp":{
-               "value":15,
-               "min":0,
-               "max":15
-            },
-            "ap":{
-               "value":20,
-               "min":0,
-               "max":20
-            }
-        },
-        "characterHeader": { 
-          "es":0,
-          "ep":0,
-          "gg":0,
-          "sg":0,
-          "gp":2
-        },
-        "attributes":{
-          "st": {
-            "value": 50,
-            "bonus": 0
-          },
-          "ge": {
-            "value": 50,
-            "bonus": 0
-          },
-          "gw": {
-            "value": 50,
-            "bonus": 0
-          },
-          "ko": {
-            "value": 50,
-            "bonus": 0
-          },
-          "in": {
-            "value": 50,
-            "bonus": 0
-          },
-          "zt": {
-            "value": 50,
-            "bonus": 0
-          },
-          "au": {
-            "value": 50,
-            "bonus": 0
-          },
-          "pa": {
-            "value": 50,
-            "bonus": 0
-          },
-          "wk": {
-            "value": 50,
-            "bonus": 0
-          }
+        "ap": {
+          "value": 20,
+          "min": 0,
+          "max": 20
         }
       },
-      "character":{
-         "templates": [
-           "characterBars",
-           "attributes",
-           "characterDescription",
-           "characterHeader"
-         ]
+      "characterHeader": {
+        "es": 0,
+        "ep": 0,
+        "gg": 0,
+        "sg": 0,
+        "gp": 2
       },
-      "npc":{
-         "templates": [
-           "characterBars",
-           "attributes",
-           "characterDescription"
-         ]
-      },
-      "vehicle":{
-         "templates": [
-           "characterBars",
-           "attributes"
-         ]
+      "attributes": {
+        "st": {
+          "value": 50,
+          "bonus": 0
+        },
+        "ge": {
+          "value": 50,
+          "bonus": 0
+        },
+        "gw": {
+          "value": 50,
+          "bonus": 0
+        },
+        "ko": {
+          "value": 50,
+          "bonus": 0
+        },
+        "in": {
+          "value": 50,
+          "bonus": 0
+        },
+        "zt": {
+          "value": 50,
+          "bonus": 0
+        },
+        "au": {
+          "value": 50,
+          "bonus": 0
+        },
+        "pa": {
+          "value": 50,
+          "bonus": 0
+        },
+        "wk": {
+          "value": 50,
+          "bonus": 0
+        }
       }
-   },
-   "Item":{
-      "types":[
-         "item"
+    },
+    "character": {
+      "templates": [
+        "characterBars",
+        "attributes",
+        "characterDescription",
+        "characterHeader"
+      ]
+    },
+    "npc": {
+      "templates": [
+        "characterBars",
+        "attributes",
+        "characterDescription"
+      ]
+    },
+    "vehicle": {
+      "templates": [
+        "characterBars",
+        "attributes"
+      ]
+    }
+  },
+  "Item": {
+    "types": [
+      "item",
+      "skill",
+      "weaponcl",
+      "weaponrn",
+      "weapondf",
+      "armor",
+      "spell",
+      "language",
+      "untrained",
+      "sense"
+    ],
+    "templates": {
+      "itemDescription": {
+        "description": " "
+      },
+      "skillHeader": {
+        "fw":0,
+        "bonus":0,
+        "leitE":"",
+        "pp":0,
+        "lernListe":"",
+        "kampfBlatt":false
+      },
+      "itemMods":{
+        "magic":false,
+        "onbody":false,
+        "angB":0,
+        "schB":0,
+        "abwB":0,
+        "hRang":0,
+        "lpSchutz":0,
+        "apSchutz":0,
+        "resG":0,
+        "resK":0,
+        "container":"",
+        "abw":0
+      },
+      "itemWeapon":{
+        "spezial":false,
+        "schaden":0,
+        "fertigkeit":""
+      },
+      "itemWeaponRn":{
+        "munition":0,
+        "reichweite":0
+      }
+    },
+    "skill":{
+      "templates": [
+        "itemDescription",
+        "skillHeader"
+      ]
+    },
+    "item": {
+      "templates": [
+        "itemDescription",
+        "itemMods"
       ],
-      "templates":{
-         "itemDescription": {
-            "description": " "
-         }
-      },
-      "item":{
-         "templates":[
-            "itemDescription"
-         ],
-         "quantity":1,
-         "value":0,
-         "magic":false,
-         "onbody":false, 
-         "attributes":{
-
-         },
-         "groups":{
-
-         }
-      }
-   }
+      "quantity": 1,
+      "value": 0
+    }
+  }
 }

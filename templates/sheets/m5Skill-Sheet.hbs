@@ -1,0 +1,52 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        {{!-- <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" /> --}}
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Fertigkeit" /></h1>
+    </header>
+    <div class="sheet-content">
+        <table>
+            <tr>
+                <th>{{localize "midgard5.skill.fw"}}</th>
+                <th>{{localize "midgard5.skill.bonus"}}</th>
+                <th>{{localize "midgard5.skill.leitE"}}</th>
+                <th>{{localize "midgard5.skill.lernListe"}}</th>
+                <th>{{localize "midgard5.skill.pp"}}</th>
+                <th>{{localize "midgard5.skill.kampfBlatt"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <input name="data.fw" type="number" value="{{data.fw}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.bonus" type="number" value="{{data.bonus}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <select name="data.leitE">
+                        {{#select data.leitE}}
+                        {{#each config.attributeList as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    {{!-- <input name="data.LernListe" type="text" value="{{data.lernListe}}" data-dtype="Text" /> --}}
+                    <select name="data.lernListe">
+                        {{#select data.lernListe}}
+                        {{#each config.lernListe as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <input name="data.pp" type="number" value="{{data.pp}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.kampfBlatt" type="checkbox" {{checked data.kampfBlatt}} />
+                </td>
+            </tr>
+        </table>
+        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+    </div>
+</form>

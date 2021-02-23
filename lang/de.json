@@ -2,34 +2,75 @@
   "ACTOR.TypeCharacter": "Spielfigur",
   "ACTOR.TypeNpc": "Kreatur / Nichtspielerfigur",
   "ACTOR.TypeVehicle": "Transportmittel / Pferd etc.",
+
   "ITEM.TypeItem": "Gegenstand",
-  "midgard5.description": "Beschreibung",
-  "midgard5.item-value": "Wert",
-  "midgard5.item-quantity": "Menge",
-  "midgard5.item-onbody": "Am Körper",
-  "midgard5.item-ismagic": "Ist Magisch",
-  "midgard5.actor-lp": "Lebenspunkte",
-  "midgard5.actor-ap": "Ausdauerpunkte",
-  "midgard5.actor-st": "St",
-  "midgard5.actor-st-long": "Stärke",
-  "midgard5.actor-ko": "Ko",
-  "midgard5.actor-ko-long": "Konstitution",
-  "midgard5.actor-au": "Au",
-  "midgard5.actor-au-long": "Aussehen",
-  "midgard5.actor-gs": "Gs",
-  "midgard5.actor-gs-long": "Geschicklichkeit",
-  "midgard5.actor-in": "In",
-  "midgard5.actor-in-long": "Intelligenz",
-  "midgard5.actor-pa": "pA",
-  "midgard5.actor-pa-long": "persönliche Ausstrahlung",
-  "midgard5.actor-gw": "Gw",
-  "midgard5.actor-gw-long": "Gewandtheit",
-  "midgard5.actor-zt": "Zt",
-  "midgard5.actor-zt-long": "Zaubertalent",
-  "midgard5.actor-wk": "Wk",
-  "midgard5.actor-wk-long": "Willenskraft",
-  "midgard5.bonus": "Bonus",
-  "midgard5.aktuell": "Akt.",
-  "midgard5.maximum": "Max.",
-  "midgard5.attrvalue": "Wert"
+  "ITEM.TypeSkill": "Fertigkeit",
+  "ITEM.TypeWeaponcl": "Nahkampfwaffe",
+  "ITEM.TypeWeaponrn": "Fernkampfwaffe",
+  "ITEM.TypeWeapondf": "Verteidigungswaffe",
+  "ITEM.TypeArmor": "Rüstung",
+  "ITEM.TypeSpell": "Zauber",
+  "ITEM.TypeLanguage": "Sprache",
+  "ITEM.TypeUntrained": "Ungelernt",
+  "ITEM.TypeSense": "Sinn",
+  
+  "midgard5": {
+    "description": "Beschreibung",
+  
+    "item": {
+      "value": "Wert",
+      "quantity": "Menge",
+      "onbody": "Am Körper",
+      "ismagic": "Ist Magisch"
+    },
+  
+    "skill": {
+      "fw": "Fw",
+      "bonus": "Bonus",
+      "leitE": "LeitE",
+      "lernListe": "LernListe",
+      "pp": "PP",
+      "kampfBlatt": "KBlatt"
+    },
+  
+    "actor": {
+      "lp": "Lebenspunkte",
+      "ap": "Ausdauerpunkte",
+      "st": "St",
+      "st-long": "Stärke",
+      "ko": "Ko",
+      "ko-long": "Konstitution",
+      "au": "Au",
+      "au-long": "Aussehen",
+      "gs": "Gs",
+      "gs-long": "Geschicklichkeit",
+      "in": "In",
+      "in-long": "Intelligenz",
+      "pa": "pA",
+      "pa-long": "persönliche Ausstrahlung",
+      "gw": "Gw",
+      "gw-long": "Gewandtheit",
+      "zt": "Zt",
+      "zt-long": "Zaubertalent",
+      "wk": "Wk",
+      "wk-long": "Willenskraft"
+    },
+
+    "lernListe": {
+      "alltag": "Alltag",
+      "freiland": "Freiland",
+      "halbwelt": "Halbwelt",
+      "kampf": "Kampf",
+      "koerper": "Körper",
+      "sozial": "Sozial",
+      "unterwelt": "Unterwelt",
+      "waffen": "Waffen",
+      "wissen": "Wissen"
+    },
+  
+    "bonus": "Bonus",
+    "aktuell": "Akt.",
+    "maximum": "Max.",
+    "attrvalue": "Wert"
+  }
 }

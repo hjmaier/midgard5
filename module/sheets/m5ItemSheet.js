@@ -9,6 +9,6 @@ export default class m5ItemSheet extends ItemSheet {
   }
 
   get template() {
-      return 'systems/midgard5/templates/sheets/m5Item-Sheet.hbs';
+      return `systems/midgard5/templates/sheets/m5${this.item.data.type}-Sheet.hbs`;
   }
 }
