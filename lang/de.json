@@ -1,8 +1,8 @@
 {
   "ACTOR.TypeCharacter": "Spielfigur",
-  "ACTOR.TypeNpc": "Kreatur / Nichtspielerfigur",
+  "ACTOR.TypeNpc": "Kreatur / NSpF",
+  "ACTOR.TypeNpcnotlinked": "NSpF nicht verbunden",
   "ACTOR.TypeVehicle": "Transportmittel / Pferd etc.",
-
   "ITEM.TypeItem": "Gegenstand",
   "ITEM.TypeSkill": "Fertigkeit",
   "ITEM.TypeWeaponcl": "Nahkampfwaffe",
@@ -13,17 +13,29 @@
   "ITEM.TypeLanguage": "Sprache",
   "ITEM.TypeUntrained": "Ungelernt",
   "ITEM.TypeSense": "Sinn",
-  
+  "ITEM.TypeRace": "Rasse",
+  "ITEM.TypeType": "Klasse",
   "midgard5": {
+    "bonusauf": "Bonus auf:",
     "description": "Beschreibung",
-  
     "item": {
       "value": "Wert",
       "quantity": "Menge",
       "onbody": "Am Körper",
       "ismagic": "Ist Magisch"
     },
-  
+    "itemMod": {
+      "angB": "Ang.",
+      "schB": "Sch.",
+      "abwB": "Abw.",
+      "hRang": "Rang",
+      "lpSchutz": "Rüst.LP",
+      "apSchutz": "Rüst.AP",
+      "resG": "ResG",
+      "resK": "ResK",
+      "lpMod": "LP",
+      "apMod": "AP"
+    },
     "skill": {
       "fw": "Fw",
       "bonus": "Bonus",
@@ -32,7 +44,6 @@
       "pp": "PP",
       "kampfBlatt": "KBlatt"
     },
-  
     "actor": {
       "lp": "Lebenspunkte",
       "ap": "Ausdauerpunkte",
@@ -55,7 +66,6 @@
       "wk": "Wk",
       "wk-long": "Willenskraft"
     },
-
     "lernListe": {
       "alltag": "Alltag",
       "freiland": "Freiland",
@@ -67,7 +77,6 @@
       "waffen": "Waffen",
       "wissen": "Wissen"
     },
-  
     "bonus": "Bonus",
     "aktuell": "Akt.",
     "maximum": "Max.",

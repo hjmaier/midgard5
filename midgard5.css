@@ -14,6 +14,21 @@
   height: 64px;
   width: 64px;
 }
+.midgard5.sheet.race form {
+  display: flex;
+  flex-direction: column;
+}
+.midgard5.sheet.race .sheet-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.midgard5.sheet.race .sheet-content .editor {
+  height: 100%;
+}
+.midgard5.sheet.race .sheet-content .mods {
+  display: inline;
+}
 .midgard5.sheet.skill form {
   display: flex;
   flex-direction: column;

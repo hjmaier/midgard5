@@ -34,6 +34,7 @@
 <li><a href="https://game-icons.net/1x1/delapouite/perspective-dice-five.html">Perspective dice 5 icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
 <li><a href="https://game-icons.net/1x1/skoll/d10.html">Perspective dice 5 icon</a> by Skoll</li>
 <li><a href="https://game-icons.net/1x1/delapouite/broken-axe.html">Broken axe icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/dwarf-face.html">Dwarf face icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
 <li><a href="https://game-icons.net/1x1/delapouite/look-at.html">Look at icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
 <li><a href="https://game-icons.net/1x1/delapouite/shrug.html">Shrug icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
 <li><a href="https://game-icons.net/1x1/delapouite/discussion.html">Discussion icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
@@ -48,5 +49,6 @@
 <li><a href="https://game-icons.net/1x1/lorc/swap-bag.html">Swap bag icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
 <li><a href="https://game-icons.net/1x1/lorc/gift-of-knowledge.html">Gift of knowledge icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
 <li><a href="https://game-icons.net/1x1/lorc/juggler.html">Juggler icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
+<li><a href="https://game-icons.net/1x1/lorc/master-of-arms.html">Master of arms icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
 </ul><br/>
 <p>No changes were made</p>

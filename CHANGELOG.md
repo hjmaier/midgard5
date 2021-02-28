@@ -17,3 +17,4 @@
 # 0.07
 - Myrkgard-Karte hinzugefügt
 - Default icons für items
+- Rasse und Abenteurertyp als Item implementiert

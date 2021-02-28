@@ -2,7 +2,8 @@
   "Actor": {
     "types": [
       "npc",
-      "character"
+      "character",
+      "npcnotlinked"
     ],
     "templates": {
       "characterDescription": {
@@ -99,57 +100,79 @@
       "spell",
       "language",
       "untrained",
-      "sense"
+      "sense",
+      "race",
+      "type"
     ],
     "templates": {
       "itemDescription": {
         "description": " "
       },
       "skillHeader": {
-        "fw":0,
-        "bonus":0,
-        "leitE":"",
-        "pp":0,
-        "lernListe":"",
-        "kampfBlatt":false
+        "fw": 0,
+        "bonus": 0,
+        "leitE": "",
+        "pp": 0,
+        "lernListe": "",
+        "kampfBlatt": false
       },
-      "itemMods":{
-        "magic":false,
-        "onbody":false,
-        "angB":0,
-        "schB":0,
-        "abwB":0,
-        "hRang":0,
-        "lpSchutz":0,
-        "apSchutz":0,
-        "resG":0,
-        "resK":0,
-        "container":"",
-        "abw":0
+      "itemMod": {
+        "mod": {
+          "angB": 1,
+          "schB": 2,
+          "abwB": 3,
+          "hRang": 4,
+          "lpSchutz": 5,
+          "apSchutz": 6,
+          "resG": 7,
+          "resK": 8,
+          "lpMod": 9,
+          "apMod": 10,
+          "fertigkeit": {}
+        }
       },
-      "itemWeapon":{
-        "spezial":false,
-        "schaden":0,
-        "fertigkeit":""
+      "itemBase": {
+        "magic": false,
+        "onbody": false,
+        "container": "",
+        "quantity": 1,
+        "value": 0,
+        "abw": 0
       },
-      "itemWeaponRn":{
-        "munition":0,
-        "reichweite":0
+      "itemWeapon": {
+        "spezial": false,
+        "schaden": 0,
+        "fertigkeit": ""
+      },
+      "itemWeaponRn": {
+        "munition": 0,
+        "reichweite": 0
       }
     },
-    "skill":{
+    "skill": {
       "templates": [
         "itemDescription",
         "skillHeader"
       ]
     },
+    "race": {
+      "templates": [
+        "itemDescription",
+        "itemMod"
+      ]
+    },
+    "type": {
+      "templates": [
+        "itemDescription",
+        "itemMod"
+      ]
+    },
     "item": {
       "templates": [
         "itemDescription",
-        "itemMods"
-      ],
-      "quantity": 1,
-      "value": 0
+        "itemMod",
+        "itemBase"
+      ]
     }
   }
 }

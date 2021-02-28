@@ -1,0 +1,44 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{!-- Item Sheet Header --}} {{>
+    "systems/midgard5/templates/sheets/item/partials/header-noimg.hbs"}}
+    <div class="sheet-content">
+        {{localize "midgard5.bonusauf"}}<br /><br />
+        <div class="mods">
+            {{localize "midgard5.itemMod.angB"}}<input name="data.mod.angB" type="number" value="{{data.mod.angB}}"
+                data-dtype="Number" />
+            {{localize "midgard5.itemMod.schB"}}<input name="data.mod.schB" type="number" value="{{data.mod.schB}}"
+                data-dtype="Number" />
+            {{localize "midgard5.itemMod.abwB"}}<input name="data.mod.abwB" type="number" value="{{data.mod.abwB}}"
+                data-dtype="Number" />
+            {{localize "midgard5.itemMod.hRang"}}<input name="data.mod.hRang" type="number" value="{{data.mod.hRang}}"
+                data-dtype="Number" />
+            {{localize "midgard5.itemMod.lpSchutz"}}<input name="data.mod.lpSchutz" type="number"
+                value="{{data.mod.lpSchutz}}" data-dtype="Number" />
+            {{localize "midgard5.itemMod.apSchutz"}}<input name="data.mod.apSchutz" type="number"
+                value="{{data.mod.apSchutz}}" data-dtype="Number" />
+            {{localize "midgard5.itemMod.resG"}}<input name="data.mod.resG" type="number" value="{{data.mod.resG}}"
+                data-dtype="Number" />
+            {{localize "midgard5.itemMod.resK"}}<input name="data.mod.resk" type="number" value="{{data.mod.resK}}"
+                data-dtype="Number" />
+            {{localize "midgard5.itemMod.lpMod"}}<input name="data.mod.lpMod" type="number" value="{{data.mod.lpMod}}"
+                data-dtype="Number" />
+            {{localize "midgard5.itemMod.apMod"}}<input name="data.mod.apMod" type="number" value="{{data.mod.apMod}}"
+                data-dtype="Number" />
+
+        </div>
+        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+    </div>
+</form>
+
+{{!--
+"angB": 0,
+"schB": 0,
+"abwB": 0,
+"hRang": 0,
+"lpSchutz": 0,
+"apSchutz": 0,
+"resG": 0,
+"resK": 0,
+"lpMod": 0,
+"apMod": 0
+--}}

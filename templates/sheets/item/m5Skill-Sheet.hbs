@@ -1,8 +1,6 @@
 <form class="{{cssClass}}" autocomplete="off">
-    <header class="sheet-header">
-        {{!-- <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" /> --}}
-        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Fertigkeit" /></h1>
-    </header>
+    {{!-- Item Sheet Header --}} {{>
+    "systems/midgard5/templates/sheets/item/partials/header-noimg.hbs"}}
     <div class="sheet-content">
         <table>
             <tr>
@@ -30,7 +28,8 @@
                     </select>
                 </td>
                 <td>
-                    {{!-- <input name="data.LernListe" type="text" value="{{data.lernListe}}" data-dtype="Text" /> --}}
+                    {{!-- <input name="data.LernListe" type="text" value="{{data.lernListe}}" data-dtype="Text" />
+                    --}}
                     <select name="data.lernListe">
                         {{#select data.lernListe}}
                         {{#each config.lernListe as |name type|}}
