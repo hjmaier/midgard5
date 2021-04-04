@@ -3,7 +3,7 @@ export default class m5TypeSheet extends ItemSheet {
     static get defaultOptions() {
       return mergeObject(super.defaultOptions, {
         width: 530,
-        height: 340,
+        height: 530,
         classes: ["midgard5", "sheet", "type"]
       });
     }

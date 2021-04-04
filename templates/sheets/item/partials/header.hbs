@@ -1,4 +1,6 @@
 <header class="sheet-header">
+    {{#if (eq item.type "item")}}
     <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    {{/if}}
     <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
 </header>

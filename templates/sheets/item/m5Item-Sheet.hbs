@@ -2,28 +2,8 @@
   {{!-- Item Sheet Header --}} {{>
   "systems/midgard5/templates/sheets/item/partials/header.hbs"}}
   <div class="sheet-content">
-    <table>
-      <tr>
-        <th>{{localize "midgard5.item.quantity"}}</th>
-        <th>{{localize "midgard5.item.value"}}</th>
-        <th>{{localize "midgard5.item.onbody"}}</th>
-        <th>{{localize "midgard5.item.ismagic"}}</th>
-      </tr>
-      <tr>
-        <td>
-          <input name="data.quantity" type="text" value="{{data.quantity}}" data-dtype="Number" />
-        </td>
-        <td>
-          <input name="data.value" type="text" value="{{data.value}}" data-dtype="Number" />
-        </td>
-        <td>
-          <input name="data.onbody" type="checkbox" {{checked data.onbody}} />
-        </td>
-        <td>
-          <input name="data.magic" type="checkbox" {{checked data.magic}} />
-        </td>
-      </tr>
-    </table>
+    {{!-- Item Sheet Header --}} {{>
+    "systems/midgard5/templates/sheets/item/partials/basics.hbs"}}
     {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
   </div>
 </form>

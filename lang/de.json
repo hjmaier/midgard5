@@ -21,8 +21,11 @@
     "item": {
       "value": "Wert",
       "quantity": "Menge",
-      "onbody": "Am Körper",
-      "ismagic": "Ist Magisch"
+      "active": "Aktiv",
+      "ismagic": "Ist Magisch",
+      "container": "Wo getragen?",
+      "abw": "ABW",
+      "weight": "Gewicht"
     },
     "itemMod": {
       "angB": "Ang.",
@@ -34,7 +37,21 @@
       "resG": "ResG",
       "resK": "ResK",
       "lpMod": "LP",
-      "apMod": "AP"
+      "apMod": "AP",
+      "stMod": "St",
+      "gwMod": "Gw",
+      "gsMod": "Gs",
+      "koMod": "Ko",
+      "inMod": "In",
+      "ztMod": "Zt",
+      "auMod": "Au",
+      "paMod": "pA",
+      "wkMod": "Wk",
+      "gitMod": "GiT",
+      "bMod": "B",
+      "gpMod": "GP",
+      "kawMod": "KaW",
+      "glMod": "Glk"
     },
     "skill": {
       "fw": "Fw",

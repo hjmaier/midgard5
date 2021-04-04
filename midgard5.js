@@ -6,10 +6,21 @@ import m5SkillSheet from "./module/sheets/item/m5SkillSheet.js";
 import m5RaceSheet from "./module/sheets/item/m5RaceSheet.js";
 import m5TypeSheet from "./module/sheets/item/m5TypeSheet.js";
 
+async function preloadHandlebarsTemplates() {
+  const templatePaths = [
+    "systems/midgard5/templates/sheets/item/partials/header.hbs",
+    "systems/midgard5/templates/sheets/item/partials/bonus.hbs",
+    "systems/midgard5/templates/sheets/item/partials/basics.hbs"
+  ];
+  return loadTemplates(templatePaths);
+};
+
 Hooks.once("init", function () {
   console.log("M5 | Initialisierung Midgard 5");
 
   CONFIG.midgard5 = midgard5;
+
+
 
 // Default Sheet für Items definieren und das Standardsheet deaktivieren
 
@@ -24,6 +35,8 @@ Hooks.once("init", function () {
 
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("midgard5", m5CharacterSheet, { makeDefault: true });
+
+  preloadHandlebarsTemplates();
 });
 
 Hooks.on("preCreateItem", (createData, options, userId) => m5Hooks.onPreCreateItem(createData, options, userId));
