@@ -1,10 +1,13 @@
 {
-    "name": "midgard5",
+    "id": "midgard5",
     "title": "Midgard 5. Edition",
     "description": "The German RPG Midgard 5. Edition",
     "version": 0.06,
-    "minimumCoreVersion": "0.7.9",
-    "compatibleCoreVersion": "0.7.9",
+    "compatibility":{
+      "minimum": "0.7.9",
+      "verified": "0.7.9",
+      "maximum": "11"
+    },
     "templateVersion": 2,
     "author": "Hans-Joachim Maier",
     "esmodules": [
@@ -18,31 +21,31 @@
         "name": "blaupause-spielfiguren",
         "label": "Blaupausen für Spielfiguren",
         "path": "./packs/actors/blaupause-spielfiguren.db",
-        "entity": "Actor"
+        "type": "Actor"
       },
       {
         "name": "tabellen-kritische-ereignisse",
         "label": "Tabellen Kritische Ereignisse",
         "path": "./packs/rolltables/tabellen-kritische-ereignisse.db",
-        "entity": "RollTable"
+        "type": "RollTable"
       },
       {
         "name": "makros-kritische-ereignisse",
         "label": "Makros Kritische Ereignisse",
         "path": "./packs/macros/makros-kritische-ereignisse.db",
-        "entity": "Macro"
+        "type": "Macro"
       },
       {
         "name": "makros-standardwurfel",
         "label": "Standardwürfel",
         "path": "./packs/macros/makros-standardwurfel.db",
-        "entity": "Macro"
+        "type": "Macro"
       },
       {
         "name": "scenes-midgard-karten",
         "label": "Midgard-Karten",
         "path": "./packs/scenes/scenes-midgard-karten.db", 
-        "entity": "Scene"
+        "type": "Scene"
       }  
     ],
     "languages": [
@@ -52,6 +55,7 @@
           "path": "lang/de.json"
         }
       ],
+    "socket": false,
     "gridDistance": 1,
     "gridUnits": "m",
     "primaryTokenAttribute": "lp",
