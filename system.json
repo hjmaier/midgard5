@@ -9,7 +9,13 @@
       "maximum": "11"
     },
     "templateVersion": 2,
-    "author": "Hans-Joachim Maier",
+    "authors": [
+        {
+          "id":"hjmaier",
+          "name": "Hans-Joachim Maier",
+          "url": "https://github.com/hjmaier/midgard5"
+        }
+      ],
     "esmodules": [
       "midgard5.js"
     ],
