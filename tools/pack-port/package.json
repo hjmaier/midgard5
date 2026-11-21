@@ -1,0 +1,11 @@
+{
+  "name": "midgard5-v14-pack-port",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test checks.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": { "@foundryvtt/foundryvtt-cli": "3.0.5" }
+}

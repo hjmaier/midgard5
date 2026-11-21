@@ -14,3 +14,23 @@
 # 0.06
 - Fehler in Krit-Tabellen korrigiert
 - Midgard-Karten hinzugefügt
+# 0.07
+- Myrkgard-Karte hinzugefügt
+- Default icons für items
+- Rasse als Item implementiert
+- Abenteurertyp als Item implementiert
+- Modifikatoren für Items hinzugefügt
+# 0.14.0
+
+- Systemmanifest, typisierte Datenmodelle und Figuren-/Gegenstandsbögen an V14 angepasst.
+- LP und AP bleiben Token-Ressourcen. Initiative nutzt weiterhin GW plus Bonus.
+- Die fünf deklarierten Kompendien werden für V14 nach LevelDB konvertiert.
+- Kompatibilität alter Welten erst an einer separaten Kopie prüfen.
+
+# 0.14.1 
+
+- Beschreibungsfelder für die serverseitige HTML-Bereinigung deklariert und mit allen Figuren- und Itemtypen abgeglichen.
+
+# 0.14.2 
+
+- Kritische Würfeltabellen: Regelhinweise als Fließtext; Ergebnistitel erscheinen nicht doppelt. Würfelbereiche, IDs und eingebettete Würfe bleiben unverändert.

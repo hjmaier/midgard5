@@ -1,16 +1,31 @@
-import m5ItemSheet from "./module/sheets/m5ItemSheet.js";
-import m5CharacterSheet from "./module/sheets/m5CharacterSheet.js";
+import { midgard5 } from "./module/config.js";
+import { defaults } from "./module/data/defaults.js";
+import { makeDataModels } from "./module/data/models.js";
+import { MidgardActorSheet, MidgardItemSheet, MidgardRaceSheet,
+  MidgardSkillSheet, MidgardTypeSheet } from "./module/sheets/v14-sheets.js";
 
-Hooks.once("init", function () {
-  console.log("M5 | Initialisierung Midgard 5");
+Hooks.once("init", () => {
+  CONFIG.midgard5 = midgard5;
+  const { Actor, Item } = makeDataModels();
+  Object.assign(CONFIG.Actor.dataModels, Actor);
+  Object.assign(CONFIG.Item.dataModels, Item);
+  CONFIG.Actor.trackableAttributes = Object.fromEntries(
+    Object.keys(defaults.Actor).map(type => [type, { bar: ["lp", "ap"], value: [] }])
+  );
 
-// Default Sheet für Items definieren und das Standardsheet deaktivieren
+  const { DocumentSheetConfig } = foundry.applications.apps;
+  const register = (documentClass, sheet, types, label) => DocumentSheetConfig.registerSheet(
+    documentClass, "midgard5", sheet, { types, label, makeDefault: true }
+  );
+  register(CONFIG.Actor.documentClass, MidgardActorSheet, Object.keys(defaults.Actor), "MIDGARD 5");
+  register(CONFIG.Item.documentClass, MidgardItemSheet, ["item", "weaponcl", "weaponrn", "weapondf", "armor"], "MIDGARD 5");
+  register(CONFIG.Item.documentClass, MidgardSkillSheet, ["skill", "spell", "language", "untrained", "sense"], "MIDGARD 5");
+  register(CONFIG.Item.documentClass, MidgardRaceSheet, ["race"], "MIDGARD 5");
+  register(CONFIG.Item.documentClass, MidgardTypeSheet, ["type"], "MIDGARD 5");
+});
 
-  Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("midgard5", m5ItemSheet, { makeDefault: true });
-
-// Default Sheet für Actors definieren und das Standardsheet deaktivieren
-
-  Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("midgard5", m5CharacterSheet, { makeDefault: true });
+Hooks.on("preCreateItem", (item, data) => {
+  if (!data.img && Object.hasOwn(defaults.Item, item.type)) {
+    item.updateSource({ img: `systems/midgard5/assets/icons/default/${item.type}.svg` });
+  }
 });

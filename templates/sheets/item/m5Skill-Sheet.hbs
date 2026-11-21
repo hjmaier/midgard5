@@ -1,0 +1,39 @@
+<div class="midgard5-sheet-body">
+    {{!-- Item Sheet Header --}} {{>
+    "systems/midgard5/templates/sheets/item/partials/header.hbs"}}
+    <div class="sheet-content">
+        <table>
+            <tr>
+                <th>{{localize "midgard5.skill.fw"}}</th>
+                <th>{{localize "midgard5.skill.bonus"}}</th>
+                <th>{{localize "midgard5.skill.leitE"}}</th>
+                <th>{{localize "midgard5.skill.lernListe"}}</th>
+                <th>{{localize "midgard5.skill.pp"}}</th>
+                <th>{{localize "midgard5.skill.kampfBlatt"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <input name="system.fw" type="number" value="{{system.fw}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="system.bonus" type="number" value="{{system.bonus}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <select name="system.leitE">{{selectOptions attributeOptions selected=system.leitE}}</select>
+                </td>
+                <td>
+                    {{!-- <input name="system.LernListe" type="text" value="{{system.lernListe}}" data-dtype="Text" />
+                    --}}
+                    <select name="system.lernListe">{{selectOptions learningOptions selected=system.lernListe}}</select>
+                </td>
+                <td>
+                    <input name="system.pp" type="number" value="{{system.pp}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="system.kampfBlatt" type="checkbox" {{checked system.kampfBlatt}} />
+                </td>
+            </tr>
+        </table>
+        {{> "systems/midgard5/templates/sheets/description.hbs"}}
+    </div>
+</div>

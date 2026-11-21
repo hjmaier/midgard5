@@ -34,9 +34,31 @@
 <li><a href="https://game-icons.net/1x1/delapouite/perspective-dice-five.html">Perspective dice 5 icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
 <li><a href="https://game-icons.net/1x1/skoll/d10.html">Perspective dice 5 icon</a> by Skoll</li>
 <li><a href="https://game-icons.net/1x1/delapouite/broken-axe.html">Broken axe icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/dwarf-face.html">Dwarf face icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/look-at.html">Look at icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/shrug.html">Shrug icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/discussion.html">Discussion icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/war-axe.html">War axe icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/closed-barbute.html">Closed barbute icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/bow-arrow.html">Bow arrow icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
+<li><a href="https://game-icons.net/1x1/delapouite/attached-shield.html">Attached shield icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
 <li><a href="https://game-icons.net/1x1/lorc/chopped-skull.html">Chopped Skull icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
 <li><a href="https://game-icons.net/1x1/lorc/broken-shield.html">Broken shield icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
 <li><a href="https://game-icons.net/1x1/delapouite/shield-bash.html">Shield bash icon</a> by <a href="https://delapouite.com/">Delapouite</a></li>
 <li><a href="https://game-icons.net/1x1/lorc/mushroom-cloud.html">Mushroom cloud icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
+<li><a href="https://game-icons.net/1x1/lorc/swap-bag.html">Swap bag icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
+<li><a href="https://game-icons.net/1x1/lorc/gift-of-knowledge.html">Gift of knowledge icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
+<li><a href="https://game-icons.net/1x1/lorc/juggler.html">Juggler icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
+<li><a href="https://game-icons.net/1x1/lorc/master-of-arms.html">Master of arms icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
 </ul><br/>
 <p>No changes were made</p>
+
+## Foundry V14: Entwicklungsstand
+
+Der V14-Port hat dieselbe System-ID `midgard5` wie das alte Paket. Für einen
+ersten Lauf das fertige System-ZIP in einem **frischen** Foundry-Datenverzeichnis
+unter `Data/systems/midgard5/` entpacken. `system.json` muss direkt dort liegen.
+Danach Foundry neu starten und eine neue Welt mit dem System anlegen. Das ZIP
+ist das Spielsystem und ersetzt nicht den lizenzierten Foundry-Server.
+
+Details, Testreihenfolge und Grenzen: [V14-TESTPLAN.md](V14-TESTPLAN.md).
