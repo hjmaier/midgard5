@@ -52,3 +52,13 @@
 <li><a href="https://game-icons.net/1x1/lorc/master-of-arms.html">Master of arms icon</a> by <a href="https://lorcblog.blogspot.com/">Lorc</a></li>
 </ul><br/>
 <p>No changes were made</p>
+
+## Foundry V14: Entwicklungsstand
+
+Der V14-Port hat dieselbe System-ID `midgard5` wie das alte Paket. Für einen
+ersten Lauf das fertige System-ZIP in einem **frischen** Foundry-Datenverzeichnis
+unter `Data/systems/midgard5/` entpacken. `system.json` muss direkt dort liegen.
+Danach Foundry neu starten und eine neue Welt mit dem System anlegen. Das ZIP
+ist das Spielsystem und ersetzt nicht den lizenzierten Foundry-Server.
+
+Details, Testreihenfolge und Grenzen: [V14-TESTPLAN.md](V14-TESTPLAN.md).

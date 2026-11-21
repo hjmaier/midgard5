@@ -97,6 +97,32 @@
     "bonus": "Bonus",
     "aktuell": "Akt.",
     "maximum": "Max.",
-    "attrvalue": "Wert"
+    "attrvalue": "Wert",
+    "ownedItems": "Besitz und Fertigkeiten",
+    "editItem": "Eintrag öffnen",
+    "deleteItem": "Eintrag löschen",
+    "save": "Speichern"
+  },
+  "TYPES": {
+    "Actor": {
+      "npc": "Kreatur / NSpF",
+      "character": "Spielfigur",
+      "npcnotlinked": "NSpF nicht verbunden",
+      "vehicle": "Transportmittel / Pferd etc."
+    },
+    "Item": {
+      "item": "Gegenstand",
+      "skill": "Fertigkeit",
+      "weaponcl": "Nahkampfwaffe",
+      "weaponrn": "Fernkampfwaffe",
+      "weapondf": "Verteidigungswaffe",
+      "armor": "Rüstung",
+      "spell": "Zauber",
+      "language": "Sprache",
+      "untrained": "Ungelernt",
+      "sense": "Sinn",
+      "race": "Rasse",
+      "type": "Klasse"
+    }
   }
 }

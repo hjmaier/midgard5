@@ -94,3 +94,19 @@
   height: 64px;
   width: 64px;
 }
+
+/* Application V2 sheet parts have one root and share the document form. */
+.midgard5.sheet .window-content {
+  overflow: auto;
+}
+.midgard5.sheet .midgard5-sheet-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.midgard5.sheet .midgard5-sheet-body prose-mirror {
+  min-height: 5rem;
+}
+.midgard5.sheet [data-action="editImage"] {
+  cursor: pointer;
+}

@@ -1,42 +1,31 @@
-import {midgard5} from "./module/config.js";
-import m5Hooks from "./module/m5Hooks.js";
-import m5CharacterSheet from "./module/sheets/actor/m5CharacterSheet.js";
-import m5ItemSheet from "./module/sheets/item/m5ItemSheet.js";
-import m5SkillSheet from "./module/sheets/item/m5SkillSheet.js";
-import m5RaceSheet from "./module/sheets/item/m5RaceSheet.js";
-import m5TypeSheet from "./module/sheets/item/m5TypeSheet.js";
+import { midgard5 } from "./module/config.js";
+import { defaults } from "./module/data/defaults.js";
+import { makeDataModels } from "./module/data/models.js";
+import { MidgardActorSheet, MidgardItemSheet, MidgardRaceSheet,
+  MidgardSkillSheet, MidgardTypeSheet } from "./module/sheets/v14-sheets.js";
 
-async function preloadHandlebarsTemplates() {
-  const templatePaths = [
-    "systems/midgard5/templates/sheets/item/partials/header.hbs",
-    "systems/midgard5/templates/sheets/item/partials/bonus.hbs",
-    "systems/midgard5/templates/sheets/item/partials/basics.hbs"
-  ];
-  return loadTemplates(templatePaths);
-};
-
-Hooks.once("init", function () {
-  console.log("M5 | Initialisierung Midgard 5");
-
+Hooks.once("init", () => {
   CONFIG.midgard5 = midgard5;
+  const { Actor, Item } = makeDataModels();
+  Object.assign(CONFIG.Actor.dataModels, Actor);
+  Object.assign(CONFIG.Item.dataModels, Item);
+  CONFIG.Actor.trackableAttributes = Object.fromEntries(
+    Object.keys(defaults.Actor).map(type => [type, { bar: ["lp", "ap"], value: [] }])
+  );
 
-
-
-// Default Sheet für Items definieren und das Standardsheet deaktivieren
-
-  Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("midgard5", m5ItemSheet, { makeDefault: true });
-  Items.registerSheet("midgard5", m5ItemSheet, { types: ["item"], makeDefault: true });
-  Items.registerSheet("midgard5", m5SkillSheet, { types: ["skill"], makeDefault: true });
-  Items.registerSheet("midgard5", m5TypeSheet, { types: ["type"], makeDefault: true });
-  Items.registerSheet("midgard5", m5RaceSheet, { types: ["race"], makeDefault: true });
-
-// Default Sheet für Actors definieren und das Standardsheet deaktivieren
-
-  Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("midgard5", m5CharacterSheet, { makeDefault: true });
-
-  preloadHandlebarsTemplates();
+  const { DocumentSheetConfig } = foundry.applications.apps;
+  const register = (documentClass, sheet, types, label) => DocumentSheetConfig.registerSheet(
+    documentClass, "midgard5", sheet, { types, label, makeDefault: true }
+  );
+  register(CONFIG.Actor.documentClass, MidgardActorSheet, Object.keys(defaults.Actor), "MIDGARD 5");
+  register(CONFIG.Item.documentClass, MidgardItemSheet, ["item", "weaponcl", "weaponrn", "weapondf", "armor"], "MIDGARD 5");
+  register(CONFIG.Item.documentClass, MidgardSkillSheet, ["skill", "spell", "language", "untrained", "sense"], "MIDGARD 5");
+  register(CONFIG.Item.documentClass, MidgardRaceSheet, ["race"], "MIDGARD 5");
+  register(CONFIG.Item.documentClass, MidgardTypeSheet, ["type"], "MIDGARD 5");
 });
 
-Hooks.on("preCreateItem", (createData, options, userId) => m5Hooks.onPreCreateItem(createData, options, userId));
+Hooks.on("preCreateItem", (item, data) => {
+  if (!data.img && Object.hasOwn(defaults.Item, item.type)) {
+    item.updateSource({ img: `systems/midgard5/assets/icons/default/${item.type}.svg` });
+  }
+});

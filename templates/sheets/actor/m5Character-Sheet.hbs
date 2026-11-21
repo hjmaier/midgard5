@@ -1,6 +1,6 @@
-<form class="actor-sheet {{cssClass}}" autocomplete="off">
+<div class="midgard5-sheet-body">
     <header class="sheet-header">
-        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+        <img class="profile-img" src="{{actor.img}}" data-action="editImage" title="{{actor.name}}" />
         <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
     </header>
     <div class="sheet-content">
@@ -18,10 +18,10 @@
                             <th>{{localize "midgard5.maximum"}}</th>
                         </tr>
                         <td>
-                            <input name="data.lp.value" type="text" value="{{data.lp.value}}" data-dtype="Number" />
+                            <input name="system.lp.value" type="number" value="{{system.lp.value}}" data-dtype="Number" />
                         </td>
                         <td>
-                            <input name="data.lp.max" type="text" value="{{data.lp.max}}" data-dtype="Number" />
+                            <input name="system.lp.max" type="number" value="{{system.lp.max}}" data-dtype="Number" />
                         </td>
                     </table>
                 </td>
@@ -32,10 +32,10 @@
                             <th>{{localize "midgard5.maximum"}}</th>
                         </tr>
                         <td>
-                            <input name="data.ap.value" type="text" value="{{data.ap.value}}" data-dtype="Number" />
+                            <input name="system.ap.value" type="number" value="{{system.ap.value}}" data-dtype="Number" />
                         </td>
                         <td>
-                            <input name="data.ap.max" type="text" value="{{data.ap.max}}" data-dtype="Number" />
+                            <input name="system.ap.max" type="number" value="{{system.ap.max}}" data-dtype="Number" />
                         </td>
                     </table>
                 </td>
@@ -46,32 +46,32 @@
                             <th>{{localize "midgard5.bonus"}}</th>
                         </tr>
                         <td>
-                            <input name="data.gw.value" type="text" value="{{data.gw.value}}" data-dtype="Number" />
+                            <input name="system.gw.value" type="number" value="{{system.gw.value}}" data-dtype="Number" />
                         </td>
                         <td>
-                            <input name="data.gw.bonus" type="text" value="{{data.gw.bonus}}" data-dtype="Number" />
+                            <input name="system.gw.bonus" type="number" value="{{system.gw.bonus}}" data-dtype="Number" />
                         </td>
                     </table>
                 </td>
             </tr>
         </table>
-        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+        {{> "systems/midgard5/templates/sheets/description.hbs"}}
     </div>
     <section class="items">
-        <h3>Owned Items</h3>
+        <h3>{{localize "midgard5.ownedItems"}}</h3>
         <ol class="actor-items">
-            {{#each actor.items as |item id|}}
-            <li class="actor-item" data-item-id="{{id}}">
+            {{#each items as |item|}}
+            <li class="actor-item" data-item-id="{{item.id}}">
                 <div class="item-name">
                     <img src="{{item.img}}" title="{{item.name}}" width="24" height="24" />
                     <h4>{{item.name}}</h4>
                 </div>
                 <div class="item-controls">
-                    <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
-                    <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    <button type="button" data-action="editItem" title="{{localize "midgard5.editItem"}}"><i class="fas fa-edit"></i></button>
+                    {{#if ../editable}}<button type="button" data-action="deleteItem" title="{{localize "midgard5.deleteItem"}}"><i class="fas fa-trash"></i></button>{{/if}}
                 </div>
             </li>
             {{/each}}
         </ol>
     </section>
-</form>
+</div>

@@ -1,0 +1,6 @@
+{
+  "name": "midgard5-foundry-system",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test" }
+}

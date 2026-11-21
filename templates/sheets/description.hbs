@@ -1,0 +1,11 @@
+<section class="midgard5-description">
+  <h3>{{localize "midgard5.description"}}</h3>
+  {{#if editable}}
+  <prose-mirror name="system.description" button="true" editable="true"
+                toggled="false" value="{{system.description}}">
+    {{{descriptionHTML}}}
+  </prose-mirror>
+  {{else}}
+  {{{descriptionHTML}}}
+  {{/if}}
+</section>

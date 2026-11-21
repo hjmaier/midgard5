@@ -1,4 +1,4 @@
-<form class="{{cssClass}}" autocomplete="off">
+<div class="midgard5-sheet-body">
     {{!-- Item Sheet Header --}} {{>
     "systems/midgard5/templates/sheets/item/partials/header.hbs"}}
     <div class="sheet-content">
@@ -13,39 +13,27 @@
             </tr>
             <tr>
                 <td>
-                    <input name="data.fw" type="number" value="{{data.fw}}" data-dtype="Number" />
+                    <input name="system.fw" type="number" value="{{system.fw}}" data-dtype="Number" />
                 </td>
                 <td>
-                    <input name="data.bonus" type="number" value="{{data.bonus}}" data-dtype="Number" />
+                    <input name="system.bonus" type="number" value="{{system.bonus}}" data-dtype="Number" />
                 </td>
                 <td>
-                    <select name="data.leitE">
-                        {{#select data.leitE}}
-                        {{#each config.attributeList as |name type|}}
-                        <option value="{{type}}">{{localize name}}</option>
-                        {{/each}}
-                        {{/select}}
-                    </select>
+                    <select name="system.leitE">{{selectOptions attributeOptions selected=system.leitE}}</select>
                 </td>
                 <td>
-                    {{!-- <input name="data.LernListe" type="text" value="{{data.lernListe}}" data-dtype="Text" />
+                    {{!-- <input name="system.LernListe" type="text" value="{{system.lernListe}}" data-dtype="Text" />
                     --}}
-                    <select name="data.lernListe">
-                        {{#select data.lernListe}}
-                        {{#each config.lernListe as |name type|}}
-                        <option value="{{type}}">{{localize name}}</option>
-                        {{/each}}
-                        {{/select}}
-                    </select>
+                    <select name="system.lernListe">{{selectOptions learningOptions selected=system.lernListe}}</select>
                 </td>
                 <td>
-                    <input name="data.pp" type="number" value="{{data.pp}}" data-dtype="Number" />
+                    <input name="system.pp" type="number" value="{{system.pp}}" data-dtype="Number" />
                 </td>
                 <td>
-                    <input name="data.kampfBlatt" type="checkbox" {{checked data.kampfBlatt}} />
+                    <input name="system.kampfBlatt" type="checkbox" {{checked system.kampfBlatt}} />
                 </td>
             </tr>
         </table>
-        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+        {{> "systems/midgard5/templates/sheets/description.hbs"}}
     </div>
-</form>
+</div>

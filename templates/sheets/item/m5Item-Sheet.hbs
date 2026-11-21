@@ -1,9 +1,9 @@
-<form class="{{cssClass}}" autocomplete="off">
+<div class="midgard5-sheet-body">
   {{!-- Item Sheet Header --}} {{>
   "systems/midgard5/templates/sheets/item/partials/header.hbs"}}
   <div class="sheet-content">
     {{!-- Item Sheet Header --}} {{>
     "systems/midgard5/templates/sheets/item/partials/basics.hbs"}}
-    {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+    {{> "systems/midgard5/templates/sheets/description.hbs"}}
   </div>
-</form>
+</div>
